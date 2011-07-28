@@ -1,0 +1,37 @@
+application: candy-demo
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /http-bind/
+  script: httpbind.py
+
+- url: /(.*\.css)
+  mime_type: text/css
+  static_files: public/\1
+  upload: public/(.*\.css)
+
+- url: /(.*\.js)
+  mime_type: text/javascript
+  static_files: public/\1
+  upload: public/(.*\.js)
+
+- url: /(.*\.html)
+  mime_type: text/html
+  static_files: public/\1
+  upload: public/(.*\.html)
+
+- url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  static_files: public/\1
+  upload: public/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  
+- url: /(.*\.swf)
+  mime_type: application/x-shockwave-flash
+  static_files: public/\1
+  upload: public/(.*\.swf)
+
+- url: /
+  static_files: public/index.html
+  upload: public/index.html
+  expiration: "15m"
