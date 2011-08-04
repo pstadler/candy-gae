@@ -6,7 +6,7 @@ from google.appengine.api import urlfetch
 from google.appengine.runtime import apiproxy_errors
 
 DEBUG = True
-DESTINATION = 'http://studdev2.nine.ch:7070/http-bind/'
+DESTINATION = 'http://yourhost.com:5280/http-bind/'
 
 class HTTPBind(webapp.RequestHandler):
 	def get(self):

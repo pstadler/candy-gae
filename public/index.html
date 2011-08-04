@@ -12,11 +12,11 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			Candy.init('http-bind/', {
-				core: { debug: true, autojoin: ['students2@conference.studdev2.nine.ch'] },
-				view: { language: 'en' }
+				core: { debug: true, autojoin: ['room1@conference.yourhost.com'] },
+				view: { language: 'en', resources: 'candy/res/' }
 			});
 			
-			Candy.Core.connect('studdev2.nine.ch');
+			Candy.Core.connect();
 		});
 	</script>
 </head>

@@ -1,3 +1,3 @@
 [submodule "public/candy"]
 	path = public/candy
-	url = git@github.com:pstadler/candy.git
+	url = git@github.com:amiadogroup/candy.git
