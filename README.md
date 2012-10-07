@@ -1,6 +1,6 @@
 # Candy on Google App Engine
 
-Candy Project Page: http://amiadogroup.github.com/candy/
+Candy Project Page: http://candy-chat.github.com/candy/
 
 **THIS IS EXPERIMENTAL**
 
